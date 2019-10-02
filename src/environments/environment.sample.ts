@@ -6,13 +6,17 @@ export const environment = {
   production: false,
   ninoxAPI: 'https://api.ninoxdb.de/v1/',
   ninoxAPIKey: 'top secret',
+  ninoxDatabaseId: 'some id',
+  ninoxTables: [
+    {
+      tableId: 'A',
+      model: 'Product',
+    }
+  ]
 };
 
 /*
- * For easier debugging in development mode, you can import the following file
- * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.
- *
- * This import should be commented out in production mode because it will have a negative impact
- * on performance if an error is thrown.
- */
-// import 'zone.js/dist/zone-error';  // Included with Angular CLI.
+  WARNING: As this is just a Proof of Concept handling the API-Key that way is _NOT SAFE_ for production!
+  As it's part of your compiled code this could expose your Ninox-API-Key if you upload or provide the app anywhere public.
+  As uploaded bundle everone could inspect the code. As compiled app it's pretty easy to reverse-engineer the app bundle.
+*/

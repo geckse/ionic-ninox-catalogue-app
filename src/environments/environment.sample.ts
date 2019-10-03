@@ -6,13 +6,8 @@ export const environment = {
   production: false,
   ninoxAPI: 'https://api.ninoxdb.de/v1/',
   ninoxAPIKey: 'top secret',
-  ninoxDatabaseId: 'some id',
-  ninoxTables: [
-    {
-      tableId: 'A',
-      model: 'Product',
-    }
-  ]
+  ninoxTeamId: 'some id',
+  ninoxDatabaseId: 'another id'
 };
 
 /*

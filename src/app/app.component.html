@@ -8,11 +8,10 @@
       </ion-header>
       <ion-content>
         <ion-list>
-          <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages">
-            <ion-item [routerDirection]="'root'" [routerLink]="[p.url]">
-              <ion-icon slot="start" [name]="p.icon"></ion-icon>
+          <ion-menu-toggle auto-hide="false" *ngFor="let table of ninoxTables">
+            <ion-item [routerDirection]="'root'" [routerLink]="'/table/'+table.id">
               <ion-label>
-                {{p.title}}
+                {{table.name}}
               </ion-label>
             </ion-item>
           </ion-menu-toggle>
